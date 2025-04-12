@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
     <string name="calculadora">Calculadora</string>
     <string name="conversor">Conversor de unidades</string>
     <string name="ingresa_un_valor">Ingresa un valor</string>

@@ -5,18 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".firstApp.MenuActivity">
+    tools:context=".firstApp.MenuActivity"
+    android:padding="20dp">
 
-    <TextView
-        android:id="@+id/textViewHello"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnCalculadora"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello Desde Menu"
-        android:textSize="32sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/calculadora"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnConversor"
+        />
+
+    <Button
+        android:id="@+id/btnConversor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/conversor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
